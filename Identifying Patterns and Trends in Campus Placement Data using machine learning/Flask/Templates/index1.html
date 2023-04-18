@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>HOME</title>
+		<link rel="stylesheet" href="{{url_for('static',filename='index1.css')}}" type="text/css">
+	</head>
+	<body>
+		<div>
+			<h1>Identifying Patterns and Trends in Campus Placement Data using Machine Learing</h1>
+		</div>
+		<div id="formId">
+			<form action="/y_predict" method="POST">
+				<h3>Fill the details</h3>
+				<table>
+					<tr>
+						<td>AGE</td>
+						<td>:</td>
+						<td><input type="number" id="sen1" name="sen1" min="21" placeholder="21 to 45"></td>
+					</tr>
+					<tr>
+						<td>GENDER</td>
+						<td>:</td>
+						<!--td><select name="sen2" id="sen2"><option value="0">Male</option><option value="1">Female</option></select></td-->
+						<td><input type="number" id="sen2" name="sen2" min="0" max="1" placeholder="Gender M(0),F(1)"></td>
+					</tr>
+					<tr>		
+						<td>DEPARTMENT</td>
+						<td>:</td>
+						<td><select id="sen3" name="sen3"><option value="-1"selected>[choose yours]</option><option value=0>Civil</option><option value=1>CS</option><option value=2>Electronics</option><option value=3>Electronics & Communication</option><option value=4>Information Technology</option><option value=5>Mechanical</option></select></td>
+					</tr>
+					<tr>
+						<td>INTERNSHIP</td>
+						<td>:</td>
+						<td><input type="number" id="sen4" name="sen4" min="0" max="3" placeholder="Internship"></td>
+					</tr>
+					<tr>
+						<td>CGPA</td>
+						<td>:</td>
+						<td><input type="number" id="sen5" name="sen5" min="4" max="10" placeholder="CGPA"></td>
+					</tr>
+					<tr>
+						<td>BACKLOGS</td>
+						<td>:</td>
+						<td><input type="number" id="sen6" name="sen6" min="0" max="5" placeholder="Number of backlogs"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input type="submit" value="Submit" onclick="action"></td>
+					</tr>
+				</table>
+				<!--<input type="number" id="sen3" name="sen3" placeholder="Stream civil(0),CS(1),Electrical(2),Electronics And Communication(3),Information Technology(4),Mechanical(5)">-->
+			</form>
+		</div>
+	</body>
+</html>

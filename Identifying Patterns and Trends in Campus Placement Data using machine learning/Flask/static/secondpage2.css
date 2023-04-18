@@ -1,0 +1,16 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+body {
+  margin: 0;
+  background-image: url("1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  margin: 25% 55%;
+  margin-right: 0px;
+}
